@@ -1,0 +1,36 @@
+body {
+	background-image: url('../images/background.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	height:100%;
+}
+
+html {
+	height: 100%;
+}
+
+#logo {
+	width: 40px;
+}
+
+#footer {
+	position: relative;
+	margin-top: -40px;
+	height: 40px;
+	clear:both;
+
+	opacity: 0.6;
+} 
+
+#wrap {
+	min-height: 100%;
+}
+
+#main {
+	overflow:auto;
+	padding-bottom: 60px;
+} 
+
+.well {
+	margin-bottom: 0px;
+}
