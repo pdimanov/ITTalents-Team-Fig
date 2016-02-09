@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Profile</title>
+	<title>Add a deck</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="libs/bootstrap-theme/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
@@ -67,74 +67,41 @@
 
      <div id="user-interface" class="col-md-8">
        <ul class="nav nav-tabs nav-justified">
-        <li role="presentation" class="active"><a href="#">My decks</a></li>
-        <li role="presentation"><a href="profile-add.html">Add a deck</a></li>
+        <li role="presentation"><a href="profile.html">My decks</a></li>
+        <li role="presentation" class="active"><a href="profile-add.html">Add a card</a></li>
         <li role="presentation"><a href="#">Friends</a></li>
         <li role="presentation"><a href="#">Messages</a></li>
       </ul>
-      <table class="table table-striped table-hover table-nonfluid">
-        <thead>
-          <tr class="success">
-            <th class="span2">#</th>
-            <th class="span2">Title</th>
-            <th class="span2">Subject</th>
-            <th class="span2">Created on</th>
-            <th class="span2"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="col-md-1">1</td>
-            <td class="col-md-5">Mammals</td>
-            <td class="col-md-2">Biology</td>
-            <td class="col-md-2">14-01-2016</td>
-            <td class="col-md-2 text-right">
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-remove"></span></button>
-            </td>
-          </tr>
-          <tr class="active">
-            <td>2</td>
-            <td>Asia</td>
-            <td>Geography</td>
-            <td>01-01-2016</td>
-            <td class="col-md-2 text-right">
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-remove"></span></button>
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Triangles and squares</td>
-            <td>Math</td>
-            <td>24-12-2015</td>
-            <td class="col-md-2 text-right">
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-remove"></span></button>
-            </td>
-          </tr>
-          <tr class="active">
-            <td>4</td>
-            <td>References in C++</td>
-            <td>Programming</td>
-            <td>14-12-2015</td>
-            <td class="col-md-2 text-right">
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-remove"></span></button>
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Europe in X century</td>
-            <td>History</td>
-            <td>10-12-2015</td>
-            <td class="col-md-2 text-right">
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
-              <button class="btn btn-xs btn-default"><span class="glyphicon glyphicon-remove"></span></button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <form class="form-horizontal well">
+        <fieldset>
+          <legend class="text-center">Add a deck</legend>
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Title</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="select" class="col-lg-2 control-label">Category</label>
+            <div class="col-lg-10">
+              <select class="form-control" id="select">
+                <option>Geography</option>
+                <option>Math</option>
+                <option>Biology</option>
+                <option>Programming</option>
+                <option>History</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <button type="reset" class="btn btn-success col-md-2 col-md-offset-4">Submit</button>
+              <button type="submit" class="btn btn-success col-md-2 col-md-offset-1">Cancel</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
     </div>
 
   </div>
